@@ -20,8 +20,8 @@ const Product: FC<ProductProps> = ({
       : product.description;
 
   const truncatedTitle =
-    product.title.length > 25
-      ? product.title.substring(0, 25) + "..."
+    product.title.length > 20
+      ? product.title.substring(0, 20) + "..."
       : product.title;
 
   return (
@@ -29,7 +29,7 @@ const Product: FC<ProductProps> = ({
       className={`max-w-${size} rounded-md overflow-hidden shadow-lg bg-white`}
     >
       <div className="p-4">
-        <img className="w-full h-[360px]" src={product.image} />
+        <img className="w-full object-contain h-[360px]" src={product.image} />
       </div>
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">

@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-100" suppressHydrationWarning={true}>
-        <div className="px-4 py-2">
+        <div className="p-12">
           <Header />
           {children}
         </div>

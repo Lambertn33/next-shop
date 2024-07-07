@@ -27,7 +27,7 @@ const ProductDetails: FC<ProductDetailsProps> = async ({ params }) => {
         <Product
           isDetailed={false}
           product={product}
-          size="md"
+          size="sm"
           additionalContent={
             <div className="my-4 flex justify-around">
               <MdFavoriteBorder size={30} />
