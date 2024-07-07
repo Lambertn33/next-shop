@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchProduct() {
   return (
-    <div className="flex gap-2 max-w-3xl justify-center w-full">
+    <div className="flex flex-col md:flex-row gap-4 justify-center w-full max-w-2xl">
       <input
         type="text"
         className="border border-gray-200 py-2 px-3 rounded-md w-full lg:w-1/2"
