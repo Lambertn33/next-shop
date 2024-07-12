@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { store } from "./store/store";
+import { Provider } from "react-redux";
 import "./globals.css";
 import Header from "./components/Header";
 
@@ -16,8 +18,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-gray-100" suppressHydrationWarning={true}>
         <div className="p-12">
-          <Header />
-          {children}
+          <Provider store={store}>
+            <div className="p-12">
+              <Header />
+              {children}
+            </div>
+          </Provider>
         </div>
       </body>
     </html>
